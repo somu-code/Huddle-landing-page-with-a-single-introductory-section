@@ -66,6 +66,7 @@ nav {
   border: none;
   border-radius: 30px;
   font-size: 18px;
+  transition: 0.2s ease-out;
 }
 .icons {
   color: white;
@@ -82,6 +83,7 @@ nav {
   place-items: center;
   border: 1px solid white;
   border-radius: 50%;
+  transition: 0.2s ease-out;
 }
 .attribution {
   font-size: 15px;
@@ -92,6 +94,18 @@ nav {
 }
 .attribution a {
   color: yellow;
+}
+.button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--Soft-Magenta);
+  transition: 0.3s ease-in;
+}
+.icons i:hover {
+  color: var(--Soft-Magenta);
+  cursor: pointer;
+  border: 1px solid var(--Soft-Magenta);
+  transition: 0.2s ease-in;
 }
 @media (max-width: 450px) {
   body {
