@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: var(--Violet);
+  background-image: url(./images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 6rem;
+}
+.main-container {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+nav {
+  align-self: flex-start;
+  margin-bottom: 2rem;
+}
+.page-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+}
+.page-image {
+  flex-grow: 1;
+}
+.page-image img {
+  width: 100%;
+}
+.page-text {
+  font-family: "Poppins";
+  color: white;
+  width: 555px;
+}
+.heading,
+.paragraph,
+.button {
+  margin-bottom: 3rem;
+}
+.heading {
+  font-size: 50px;
+  font-weight: 600;
+}
+.paragraph {
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 18px;
+}
+.button {
+  padding: 17px 60px;
+  color: var(--Violet);
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+}
+.icons {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.icons i {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  font-family: "Poppins";
+  font-weight: 400;
+}
+.attribution a {
+  color: yellow;
+}
+@media (max-width: 450px) {
+  body {
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-x: 0;
+  }
+  .main-container {
+    max-width: 375px;
+    height: auto;
+    margin: 1.5rem auto;
+    padding: 1rem;
+  }
+  nav img {
+    width: 50%;
+  }
+  nav {
+    margin-bottom: 1rem;
+  }
+  .page-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .page-text {
+    width: 100%;
+    text-align: center;
+  }
+  .heading {
+    font-size: 28px;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+  .button {
+    padding: 15px 80px;
+  }
+  .heading,
+  .paragraph,
+  .button {
+    margin-bottom: 1.5rem;
+  }
+  .icons {
+    font-size: 16px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .attribution {
+    font-size: 12px;
+  }
+}
