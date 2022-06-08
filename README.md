@@ -32,8 +32,8 @@ Mobile view
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/huddle-landing-page-with-a-single-introductory-section-_t-zh1L_n5)
+- Live Site URL: [Live site URL here](https://huddle-landing-page-with-a-single-introductory-section.pages.dev/)
 
 ### Built with
 
